@@ -1,0 +1,1901 @@
+<!DOCTYPE >
+<html>
+  <head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="" />
+
+    <meta property="og:title" content="Products  | sunnyprotectors.shop" />
+    <meta property="og:site_name" content="sunnyprotectors.shop" />
+    <meta property="og:description" content="SHOP" />
+    <meta
+      property="og:image"
+      content="https://sunnyprotectors.shop/img/logo.png"
+    />
+
+    <meta name="keywords" content="SHOP" />
+    <meta name="description" content="SHOP" />
+    <meta name="image" content="https://sunnyprotectors.shop/img/logo.png" />
+    <meta name="title" content="Products  | sunnyprotectors.shop" />
+
+    <title>Products | sunnyprotectors.shop</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://sunnyprotectors.shop/favicon.ico"
+      type="image/x-icon"
+      rel="icon"
+    />
+    <link
+      href="https://sunnyprotectors.shop/favicon.ico"
+      type="image/x-icon"
+      rel="shortcut icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sunnyprotectors.shop/theme/Public/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sunnyprotectors.shop/theme/Public/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sunnyprotectors.shop/theme/Public/css/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sunnyprotectors.shop/conbox/box/box.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sunnyprotectors.shop/conbox/assets/scripts/simplelightbox/simplelightbox.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sunnyprotectors.shop/theme/Public/css/style.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/jquery.equalheights.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/handlebars.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/jquery.inputmask.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/aos.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/isotope.pkgd.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/script.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sunnyprotectors.shop/theme/Public/js/functions.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.google.com/recaptcha/api.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body id="products" class="products">
+    <div class="loading_m"></div>
+    <div class="wrapper">
+      <nav id="sidebar">
+        <div id="dismiss">
+          <i class="fas fa-times"></i>
+        </div>
+
+        <div class="sidebar-header">
+          <h2>
+            Cart <a href="/products"><span>Keep shopping</span></a>
+          </h2>
+        </div>
+
+        <div class="sidebar-content">
+          <table class="table borderless">
+            <thead>
+              <tr class="info">
+                <th style="width: 10%">Product</th>
+                <th style="width: 48%"></th>
+                <th style="width: 18%" class="text-right">Quantity</th>
+                <th style="width: 26%" class="text-right">Price (USD)</th>
+              </tr>
+            </thead>
+            <tbody id="orderList"></tbody>
+          </table>
+
+          <form
+            action="/products"
+            role="form"
+            id="SignupShort"
+            method="post"
+            accept-charset="utf-8"
+          >
+            <div style="display: none">
+              <input type="hidden" name="_method" value="POST" />
+            </div>
+            <input
+              type="hidden"
+              name="data[UpSell][done]"
+              value="no"
+              id="UpSellDone"
+            />
+            <div class="shipping-address">
+              <h5>Shipping address</h5>
+              <div class="row control-group">
+                <div class="form-group col-md-6">
+                  <div class="required">
+                    <div class="input email required">
+                      <input
+                        name="data[User][email]"
+                        class="form-control signup-sava"
+                        placeholder="Email Address"
+                        maxlength="255"
+                        type="email"
+                        id="UserEmail"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <div>
+                    <div class="input text">
+                      <input
+                        name="data[Customer][shipping_phone_number]"
+                        class="form-control signup-sava phone_number"
+                        placeholder="Phone"
+                        type="text"
+                        id="CustomerShippingPhoneNumber"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-md-6">
+                  <div>
+                    <div class="input text">
+                      <input
+                        name="data[Customer][shipping_firstname]"
+                        class="form-control signup-sava"
+                        placeholder="First name"
+                        type="text"
+                        id="CustomerShippingFirstname"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <div>
+                    <div class="input text">
+                      <input
+                        name="data[Customer][shipping_lastname]"
+                        class="form-control signup-sava"
+                        placeholder="Last name"
+                        type="text"
+                        id="CustomerShippingLastname"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-md-12">
+                  <div>
+                    <div class="input text">
+                      <input
+                        name="data[Customer][shipping_address]"
+                        class="form-control signup-sava"
+                        placeholder="Address"
+                        type="text"
+                        id="CustomerShippingAddress"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-md-6">
+                  <div>
+                    <div class="input text">
+                      <input
+                        name="data[Customer][shipping_city]"
+                        class="form-control signup-sava"
+                        placeholder="City"
+                        type="text"
+                        id="CustomerShippingCity"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <div>
+                    <div class="input text">
+                      <input
+                        name="data[Customer][shipping_postal_code]"
+                        class="form-control signup-sava"
+                        placeholder="Postal Code"
+                        type="text"
+                        id="CustomerShippingPostalCode"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-md-6">
+                  <div>
+                    <div class="input select">
+                      <select
+                        name="data[Customer][shipping_country_id]"
+                        class="form-control cart-country-shipping signup-sava"
+                        id="CustomerShippingCountryId"
+                      >
+                        <option value="">Choose country</option>
+                        <option value="1" selected="selected">USA</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-6" id="billing_state_id">
+                  <div>
+                    <div class="input select">
+                      <select
+                        name="data[Customer][shipping_state_id]"
+                        class="form-control signup-sava"
+                        id="CustomerShippingStateId"
+                      >
+                        <option value="">Choose State</option>
+                        <option value="1" selected="selected">Alabama</option>
+                        <option value="2">Alaska</option>
+                        <option value="4">Arizona</option>
+                        <option value="5">Arkansas</option>
+                        <option value="6">California</option>
+                        <option value="7">Colorado</option>
+                        <option value="8">Connecticut</option>
+                        <option value="9">Delaware</option>
+                        <option value="10">District Of Columbia</option>
+                        <option value="12">Florida</option>
+                        <option value="13">Georgia</option>
+                        <option value="15">Hawaii</option>
+                        <option value="16">Idaho</option>
+                        <option value="17">Illinois</option>
+                        <option value="18">Indiana</option>
+                        <option value="19">Iowa</option>
+                        <option value="20">Kansas</option>
+                        <option value="21">Kentucky</option>
+                        <option value="22">Louisiana</option>
+                        <option value="23">Maine</option>
+                        <option value="25">Maryland</option>
+                        <option value="26">Massachusetts</option>
+                        <option value="27">Michigan</option>
+                        <option value="28">Minnesota</option>
+                        <option value="29">Mississippi</option>
+                        <option value="30">Missouri</option>
+                        <option value="31">Montana</option>
+                        <option value="32">Nebraska</option>
+                        <option value="33">Nevada</option>
+                        <option value="34">New Hampshire</option>
+                        <option value="35">New Jersey</option>
+                        <option value="36">New Mexico</option>
+                        <option value="37">New York</option>
+                        <option value="38">North Carolina</option>
+                        <option value="39">North Dakota</option>
+                        <option value="41">Ohio</option>
+                        <option value="42">Oklahoma</option>
+                        <option value="43">Oregon</option>
+                        <option value="45">Pennsylvania</option>
+                        <option value="46">Puerto Rico</option>
+                        <option value="47">Rhode Island</option>
+                        <option value="48">South Carolina</option>
+                        <option value="49">South Dakota</option>
+                        <option value="50">Tennessee</option>
+                        <option value="51">Texas</option>
+                        <option value="52">Utah</option>
+                        <option value="53">Vermont</option>
+                        <option value="55">Virginia</option>
+                        <option value="56">Washington</option>
+                        <option value="57">West Virginia</option>
+                        <option value="58">Wisconsin</option>
+                        <option value="59">Wyoming</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-md-12">
+                  <label style="font-size: 14px; margin-top: 10px"
+                    ><input
+                      type="checkbox"
+                      name="copy_billing"
+                      checked
+                      id="copy_billing"
+                      value="1"
+                    />
+                    Billing address same as shipping</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="billing-address" id="billing_address_card"></div>
+
+            <div class="payment-method">
+              <h5>
+                Payment method
+                <img
+                  class="img-fluid payment-method-card"
+                  alt=""
+                  src="https://sunnyprotectors.shop/theme/Public/img/card-brand-logos.png"
+                />
+              </h5>
+
+              <div class="row control-group">
+                <div class="form-group col-md-12">
+                  <div>
+                    <div class="input text">
+                      <input
+                        name="data[CreditCard][cc_number]"
+                        class="form-control"
+                        placeholder="Card Number (Visa, MasterCard or Discover)"
+                        type="text"
+                        id="CreditCardCcNumber"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row control-group">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div>
+                      <div class="input select">
+                        <select
+                          name="data[CreditCard][cc_exp_mo]"
+                          class="form-control"
+                          id="CreditCardCcExpMo"
+                        >
+                          <option value="01">January</option>
+                          <option value="02">February</option>
+                          <option value="03">March</option>
+                          <option value="04">April</option>
+                          <option value="05">May</option>
+                          <option value="06">June</option>
+                          <option value="07">July</option>
+                          <option value="08">August</option>
+                          <option value="09">September</option>
+                          <option value="10">October</option>
+                          <option value="11">November</option>
+                          <option value="12">December</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <select
+                      class="form-control"
+                      name="data[CreditCard][cc_exp_yr]"
+                    >
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                      <option value="2031">2031</option>
+                      <option value="2032">2032</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      name="data[CreditCard][cc_cvv]"
+                      class="form-control"
+                      placeholder="Security code"
+                      type="number"
+                      id="CreditCardCcCvv"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shop-agree">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="agree text-center">
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="agree"
+                        id="agree"
+                        value="true"
+                      />
+                      I agree to the
+                      <a class="btn-sm btnprimary" target="_blank" href="/terms"
+                        >Terms & Conditions</a
+                      >
+                      and
+                      <a
+                        class="btn-sm btnprimary"
+                        target="_blank"
+                        href="/privacy"
+                        >Privacy Policy
+                      </a>
+                      for the items purchased for this one time sale. Domestic
+                      deliveries arrive in 3-5 business days depending on where
+                      your package is going. Your package Tracking will be
+                      emailed once item ships in 3-5 business days. Your charges
+                      will appear on your statement as sunnyprotectors.shop:
+                    </label>
+                    <ul id="termList" class="s_list"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shop-submit text-center">
+              <div class="row">
+                <div class="col-md-12">
+                  <p hidden class="must_agree">Must Agree To Terms</p>
+                  <div style="color: red" id="error_message"></div>
+                  <button type="submit" disabled id="proceed">
+                    SHIP ORDER &nbsp;<i class="fa fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <div id="a_modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Login</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="logData"></div>
+          </div>
+        </div>
+      </div>
+
+      <script id="term-template" type="text/x-handlebars-template">
+        {{#each termsList}}
+          <li>
+            {{this}}
+          </li>
+        {{/each}}
+      </script>
+
+      <script id="order-template" type="text/x-handlebars-template">
+        		{{#each orders}}
+           <tr>
+        	<td style="vertical-align: middle;">
+        	<img src="{{img}}" class="img-fluid" alt="#">
+        	</td>
+        	<td style="vertical-align: middle;">
+        	<span class="prod_name">{{name}}</span>
+        	<select name="data[Product][supply_period]"	class="supply_period_ord mt-2 col-12"  >
+        		{{#select product_term_id }}
+        			{{#each terms}}
+        				<option value="{{ProductTerm.id}}" data-productdataid="{{../product_data_id}}" data-orderindex="{{../order_index}}">{{ProductTerm.name}}</option>
+        			{{/each}}
+        		{{/select}}
+        	</select>
+
+        	<br>
+        		<ul class="s_list">
+        			{{price_plan_text}}
+        		</ul>
+        	</td>
+        	<td class="text-right" style="vertical-align: middle;">
+        			<div class="qty_s">
+        				<span class="minus minus_ord" onclick="updateNumProductToOrder({product_data_id}, 'no', {order_index})"><i class="fa fa-minus" aria-hidden="true"></i></span>
+        				<input type="number number_ord" class="count" name="qty" value="{{number}}">
+        				<span class="plus plus_ord" onclick="updateNumProductToOrder({product_data_id}, 'yes', {order_index})" ><i class="fa fa-plus" aria-hidden="true"></i></span>
+        			</div>
+        	</td>
+        	<td style="vertical-align: middle;">
+        		<div style="float: right;">
+        		<span class="itemPrice"> ${{totalFixed itemPrice}}</span>
+        		<a class="remove_order_item" value="{{order_index}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+        		</div>
+        	</td>
+           </tr>
+           {{/each}}
+        {{#if total}}
+        	{{#if shipping}}
+        	<tr style="border-top: 2px solid #dee2e6;">
+        		<td></td>
+        		<td colspan="2" class="text-right"><span style="font-weight:500">Shipping cost:</span></td>
+        		<td class="text-right"> <span style="font-weight:500"> ${{shipping}}</span></td>
+        	</tr>
+        	{{/if}}
+           <tr style="border-top: 2px solid #dee2e6;">
+               <td></td>
+               <td colspan="2" class="text-right"><span style="font-weight:600">Total price:</span></td>
+               <td class="text-right"> <strong class="totalPrice"> ${{totalFixed total}}</strong></td>
+           </tr>
+        {{else}}
+        <tr style="border-top: 2px solid #dee2e6;">
+               <td colspan="3"><span style="font-weight:600">Cart is empty...</span></td>
+           </tr>
+        {{/if}}
+      </script>
+      <script type="text/javascript">
+        Handlebars.registerHelper("ifIsOne", function (value, options) {
+          if (parseInt(value) === 1) {
+            return options.fn(this);
+          }
+          return options.inverse(this);
+        });
+
+        Handlebars.registerHelper("select", function (value, options) {
+          var $el = $("<select />").html(options.fn(this));
+          $el.find('[value="' + value + '"]').attr({ selected: "selected" });
+          return $el.html();
+        });
+
+        Handlebars.registerHelper("totalFixed", function (total) {
+          return total.toFixed(2);
+        });
+
+        var order = (function ($) {
+          var orderList;
+          var termList;
+          function init() {
+            _render();
+          }
+
+          function _render() {
+            var test = new Date().getTime();
+            var orders = $.ajax("/products/orderItems.json?x=" + test);
+            orders.done(function (data) {
+              var container = $("#orderList");
+              var container1 = $("#termList");
+              orderList = data;
+              termList = data;
+              container.handlebars($("#order-template"), data);
+              container1.handlebars($("#term-template"), data);
+            });
+            orders.then(function () {
+              $(".remove_order_item").on("click", removeOrder);
+            });
+          }
+
+          function removeOrder() {
+            $("body").addClass("loading");
+            var Id = $(this).attr("value");
+            $.ajax({
+              type: "POST",
+              data: {
+                order_index: Id,
+              },
+              url: "/products/deleteOrderItem",
+              success: function () {
+                $("body").removeClass("loading");
+                _render();
+              },
+            });
+          }
+
+          function getOrderList() {
+            return orderList;
+          }
+
+          return {
+            init: init,
+            getOrderList: getOrderList,
+          };
+        })(jQuery);
+
+        $(document).ready(function () {
+          order.init();
+        });
+
+        (function ($) {
+          var compiled = {};
+          $.fn.handlebars = function (template, data) {
+            if (template instanceof jQuery) {
+              template = $(template).html();
+            }
+
+            compiled[template] = Handlebars.compile(template);
+            return this.html(compiled[template](data));
+          };
+        })(jQuery);
+
+        /*--- order item nav ----*/
+
+        function updateNumProductToOrder(product_data_id, add, order_index) {
+          $("body").addClass("loading");
+          $.ajax({
+            type: "POST",
+            data: {
+              product_data_id: product_data_id,
+              order_index: order_index,
+              add: add,
+            },
+            url: "/products/ajax_update_item",
+          }).done(function () {
+            order.init();
+            $("body").removeClass("loading");
+          });
+        }
+
+        $(document).on("change", ".supply_period_ord", function () {
+          $("body").addClass("loading");
+
+          var product_term_id = this.value;
+          var product_data_id = $(this.options[this.selectedIndex]).attr(
+            "data-productdataid"
+          );
+          var order_index = $(this.options[this.selectedIndex]).attr(
+            "data-orderindex"
+          );
+
+          $.ajax({
+            type: "POST",
+            data: {
+              product_data_id: product_data_id,
+              product_term_id: product_term_id,
+              order_index: order_index,
+            },
+            url: "/products/ajax_update_plan",
+          }).done(function () {
+            order.init();
+            $("body").removeClass("loading");
+          });
+        });
+
+        $("#copy_billing").change(function () {
+          $("body").addClass("loading");
+          if (this.checked) {
+            $("#billing_address_card").html("");
+            $("body").removeClass("loading");
+          } else {
+            loadBussines();
+          }
+        });
+
+        function loadBussines() {
+          $("#billing_address_card").load(
+            "/Signup/ajax_add_billing",
+            function () {
+              $("body").removeClass("loading");
+            }
+          );
+        }
+
+        var buy_url = "/Signup/short";
+
+        var enable_upsell = 0;
+        var upsell_products = 0;
+
+        $("#SignupShort").submit(function () {
+          $(".error-message").remove();
+
+          var dataSubmit = $(this).serializeArray();
+
+          $("body").addClass("loading");
+          $("#error_message").html("");
+
+          $.ajax({
+            type: "POST",
+            url: "/Users/fast_login/",
+            data: dataSubmit,
+            success: function (r) {
+              if (r === "yes") {
+                buy_url = "/Purchase/short";
+              }
+            },
+          }).done(function () {
+            $.ajax({
+              type: "POST",
+              url: buy_url,
+              data: dataSubmit,
+              dataType: "json",
+              async: false,
+              success: function (validationResponse) {
+                if (validationResponse.Res == "error") {
+                  $("body").removeClass("loading");
+
+                  $("#error_message").html(validationResponse.Msg);
+
+                  $.each(
+                    validationResponse.ResCustomer,
+                    function (fieldName, message) {
+                      var element = $(
+                        "input[name='data[Customer][" + fieldName + "]']"
+                      );
+
+                      element.parent("div").find(".error-message").remove();
+
+                      var create = $(document.createElement("div")).insertAfter(
+                        element
+                      );
+                      create.addClass("error-message").html(message[0]);
+                    }
+                  );
+
+                  if (validationResponse.ResUser != undefined) {
+                    $.each(
+                      validationResponse.ResUser,
+                      function (fieldName, message) {
+                        var element = $(
+                          "input[name='data[User][" + fieldName + "]']"
+                        );
+
+                        element.parent("div").find(".error-message").remove();
+
+                        var create = $(
+                          document.createElement("div")
+                        ).insertAfter(element);
+                        create.addClass("error-message").html(message[0]);
+                      }
+                    );
+                  }
+
+                  $.each(
+                    validationResponse.ResCard,
+                    function (fieldName, message) {
+                      var element = $(
+                        "input[name='data[CreditCard][" + fieldName + "]']"
+                      );
+
+                      element.parent("div").find(".error-message").remove();
+
+                      var create = $(document.createElement("div")).insertAfter(
+                        element
+                      );
+                      create.addClass("error-message").html(message[0]);
+                    }
+                  );
+                } else {
+                  $("body").removeClass("loading");
+
+                  if (validationResponse.Res === "upsell") {
+                    if (enable_upsell === 1 && upsell_products === 1) {
+                      $("#myUpSellModal").modal("show");
+                    } else {
+                      $("#UpSellDone").val("yes");
+                      $("#proceed").trigger("click");
+                    }
+                  }
+
+                  if (validationResponse.Res === "ok") {
+                    document.location.href = validationResponse.Link;
+                  }
+                }
+              },
+              error: function (jqXHR, textStatus, errorThrown) {
+                console.log(
+                  jqXHR + "-----" + textStatus + "-----" + errorThrown
+                );
+              },
+            });
+          });
+
+          return false;
+        });
+
+        $(document).ready(function () {
+          $("#agree").change(function () {
+            if ($(this).prop("checked") == true) {
+              $("#proceed").prop("disabled", false);
+              $(".must_agree").attr("hidden", true);
+            } else {
+              $("#proceed").prop("disabled", true);
+              $(".must_agree").removeAttr("hidden");
+            }
+          });
+
+          $(".phone_number").inputmask({ mask: "+1 (999) 999-9999" });
+          $("#CreditCardCcNumber").inputmask({ mask: "9999 9999 9999 9999" });
+        });
+
+        $(document).on("click", "#already_member", function (e) {
+          $.ajax({
+            type: "GET",
+            url: "/Users/login_modal/",
+          })
+            .done(function (data) {
+              $("#logData").html(data);
+              $("#a_modal").modal("show");
+            })
+            .fail(function () {
+              $("#a_modal").modal("show");
+              $("#logData").html("Error. Please try again.");
+            });
+        });
+      </script>
+
+      <div id="cnt">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar_allbg">
+          <div class="container">
+            <a class="navbar-brand" href="/"
+              ><img
+                src="https://sunnyprotectors.shop/img/logo.png"
+                class="img-fluid"
+            /></a>
+            <button
+              class="navbar-toggler navbar-light"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <div id="menu-block-2" class="menu-block menu-block-header_menu">
+                <ul class="navbar-nav ml-auto sf-menu" id="top-menu">
+                  <li>
+                    <a href="/" id="link-8" title="Home" class="nav-link"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/products" id="link-9" class="nav-link selected"
+                      >Products</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" id="link-10" title="Cart" class="nav-link cart"
+                      >Cart</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <nav id="sidebar_cat">
+          <div id="dismiss_cat">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+
+          <div class="sidebar-header">
+            <h5>Search products</h5>
+          </div>
+          <form
+            action="/products/index"
+            class="navbar-form pull-right"
+            style="margin: 0px"
+            id="ProductsIndexForm"
+            method="get"
+            accept-charset="utf-8"
+          >
+            <div class="p-3 mt-3">
+              <div class="form-group">
+                <input
+                  class="form-control py-2 border-right-0 border"
+                  type="search"
+                  name="prod_name"
+                  value=""
+                  placeholder="product name"
+                />
+              </div>
+              <div class="form-group">
+                <div>
+                  <div class="input select">
+                    <select
+                      name="category1"
+                      class="form-control search-cat1"
+                      id="ProductsCategory1"
+                    >
+                      <option value="">Choose category</option>
+                      <option value="3">Apparel &amp; Accessories</option>
+                      <option value="4">Bath &amp; Body</option>
+                      <option value="7">Costumes &amp; Lingerie</option>
+                      <option value="8">Infant Wear</option>
+                      <option value="11">Men&#039;s Grooming</option>
+                      <option value="12">Men&#039;s Underwear</option>
+                      <option value="13">Pet</option>
+                      <option value="15">Women&#039;s Active Apparel</option>
+                      <option value="16">Women&#039;s Fashion Apparel</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <div class="input select">
+                    <select
+                      name="category2"
+                      class="form-control search-cat2"
+                      id="ProductsCategory2"
+                    >
+                      <option value="">Choose sub-category</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-block btn-md btn-search-side"
+              >
+                <i class="fa fa-search" aria-hidden="true"></i> Search
+              </button>
+            </div>
+          </form>
+        </nav>
+
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $("#dismiss_cat, .overlay").on("click", function () {
+              $("#sidebar_cat").removeClass("active");
+              $(".overlay").removeClass("active");
+            });
+
+            $("#sidebarCollapse").on("click", function () {
+              $("#sidebar_cat").addClass("active");
+              $(".overlay").addClass("active");
+              $(".collapse.in").toggleClass("in");
+              $("a[aria-expanded=true]").attr("aria-expanded", "false");
+            });
+          });
+        </script>
+
+        <div id="our-products" class="container mb-5">
+          <button
+            type="button"
+            id="sidebarCollapse"
+            class="is-btn btn--search btn btn-primary"
+          >
+            <i class="fas fa-search"></i>
+            <span>Search products</span>
+          </button>
+
+          <div class="row grid mt-4">
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p9627162956">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1338992/images/845966.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Oh Womens Black Muscle Tank Top Cute Calligraphy Typography
+                    Shirt
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p9627162956">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p2316812845133">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1335045/images/831555.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">Christmas Mood Womens T-Shirt</h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p2316812845133"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11735817036">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1332215/images/819156.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    Working On My Santa Body Grey Sweatshirt
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11735817036">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11707497484">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1331740/images/817190.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    Our Stories Will Never End Matching Couple Black Muscle Top
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11707497484">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11446764620">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1329914/images/809297.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">Birthday Girl Pets Grey Shirt</h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11446764620">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11025529356">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1328291/images/802169.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    American Warrior Unisex Graphic Sweatshirt Black Crewneck
+                    Pullover
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11025529356">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11580854476">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1331314/images/815186.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">Crazy Bat Lady Womens White Crop Top</h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11580854476">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11025510540">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1328233/images/801953.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Happy Birthday USA Womens Gray Sleeveless Top Funny 4 Of
+                    July Tank
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11025510540">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11580791500">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1331109/images/814317.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">Heart Spider Web Womens White Shirt</h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11580791500">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11535483660">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1330763/images/812845.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Must Have Coffee Zombies Womens White Crop Top
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11535483660">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11535492236">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1330851/images/813194.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Trick-Or-Treat Skeleton Black Cat Pets Pink Shirt
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11535492236">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p10219896524">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1326069/images/792516.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    Feeling Empty Heart Black Sweatshirt Funny Quote Graphic
+                    Round Neck
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p10219896524">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11764878348">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1332631/images/820857.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$15.99</h3>
+                  <h2 class="title">
+                    It's Time To Get The Trees Lit Mens Black Tank Top
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11764878348">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11488211404">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1330262/images/810803.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">Study Or Nah Womens Red Shirt</h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11488211404">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11084960588">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1328788/images/804425.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    The Ocean Is My Vitamin Sea Womens Crewneck Muscle Tank Top
+                    Cotton
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11084960588">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p6807897990">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1338067/images/842391.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Men's Vintage American Flag Fourth of July T-shirt Casual
+                    July 4th shirt
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p6807897990">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p1345822523469">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1333712/images/826259.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Unleash Beast Womens Funny Saying Muscle Shirt For Gym
+                    Workout Gift
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p1345822523469"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11735785356">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1332090/images/818669.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    I Like To Lift Lifting Is My Favorite Mens Black Muscle Top
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11735785356">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p1442038579277">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1334425/images/828759.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    This Is My Human Costume Womens Baseball Tee
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p1442038579277"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p319626975">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1336427/images/836014.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    Summer Kind of Guy &amp; Girl Matching Couple Tank Tops
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p319626975">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p1442032418893">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1334378/images/828638.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">Hocus Pocus Focus Womens Muscle Shirt</h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p1442032418893"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11765414604">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1332996/images/822376.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$9.99</h3>
+                  <h2 class="title">Winter Wonderland White Phone Case</h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11765414604">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3pjcb183nt">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1340254/images/849028.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Boston Terror Terrier Natural Canvas Bags
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3pjcb183nt">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p10973300684">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1327922/images/800802.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    Heart USA Map American Flag Unique 4 Of July Cute Design
+                    Hoodie
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p10973300684">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3pjcb154nt">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1340209/images/6116146.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$15.99</h3>
+                  <h2 class="title">
+                    Mermaid Gang Natural Funny Saying Canvas Shoulder Bag
+                    Reusable Tote
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3pjcb154nt">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11488180556">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1330157/images/810388.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">Stand Back Try Science Mens Red Shirt</h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11488180556">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p10973148876">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1327666/images/799730.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Pistol Shaped American Flag Mens Black T-Shirt For Gun
+                    Supporters
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p10973148876">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3ppc050">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1340866/images/849640.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    Match Made In Heaven Matching Pillow Cases For Anniversary
+                    Gifts
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3ppc050">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11535453132">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1330476/images/811770.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$14.99</h3>
+                  <h2 class="title">
+                    Trick-Or-Treat Skeleton Black Cat Mens Red Shirt
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11535453132">Buy now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item">
+              <div class="inner-item">
+                <div class="image-wrapper">
+                  <a href="/products-3p11764944972">
+                    <img
+                      src="https://dmx-assets-cloudfront.s3.amazonaws.com/account/1/products/1332849/images/821713.jpg "
+                      alt=""
+                      class="img-fluid"
+                      style="max-height: 200px"
+                    />
+                  </a>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="price">$39.99</h3>
+                  <h2 class="title">
+                    It's Penguin-Ing To Look A Lot Like Christmas Grey Hoodie
+                  </h2>
+
+                  <br />
+                  <a class="buy-now" href="/products-3p11764944972">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right mt-4 mb-5 pb-5">
+            <ul class="pagination">
+              <li class="disabled" class="page-link">
+                <a href="/products">&lt; Previous</a>
+              </li>
+              <li class="disabled page-link page-item"><a>1</a></li>
+              <li class="page-item">
+                <a href="/products/index/page:2" class="page-link">2</a>
+              </li>
+              <li class="page-item">
+                <a href="/products/index/page:3" class="page-link">3</a>
+              </li>
+              <li class="page-item">
+                <a href="/products/index/page:4" class="page-link">4</a>
+              </li>
+              <li class="page-item">
+                <a href="/products/index/page:5" class="page-link">5</a>
+              </li>
+              <li class="page-item">
+                <a href="/products/index/page:2" class="page-link" rel="next"
+                  >Next &gt;</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          $(window).on("load", function () {
+            var $grid = $(".grid").isotope({
+              //itemSelector: '.grid-item'
+            });
+            // filter items on button click
+            $(".filter-button-group").on("click", "button", function () {
+              var filterValue = $(this).attr("data-filter");
+              $grid.isotope({ filter: filterValue });
+            });
+          });
+        </script>
+
+        <footer class="">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-7">
+                <div
+                  class="contact-form"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
+                  <div class="contact-box">
+                    <h3>Have a Question ?</h3>
+                    <form
+                      action="/contact_us_manager/Contacts/contact_home"
+                      role="form"
+                      id="SettingSignUpForm"
+                      method="post"
+                      accept-charset="utf-8"
+                      class="m-4"
+                    >
+                      <input
+                        type="text"
+                        required=""
+                        name="data[Contact][name]"
+                        placeholder="Your name"
+                      />
+                      <input
+                        type="email"
+                        required=""
+                        name="data[Contact][email]"
+                        placeholder="E-mail"
+                      />
+                      <textarea
+                        name="data[Contact][question]"
+                        required=""
+                        cols="30"
+                        rows="12"
+                        placeholder="Your Message"
+                      ></textarea>
+                      <div
+                        class="g-recaptcha"
+                        data-sitekey="6Ld-DJsUAAAAACzJy2qaYLatW59ibQkG4dJeST2K"
+                      ></div>
+                      <br />
+                      <button class="hvr-sweep-to-right" type="submit">
+                        <i class="fa fa-paper-plane"></i> Submit
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-12 col-12">
+                <div
+                  class="contact-right-txt"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  <div class="top-txt">
+                    <h2>Contact Details</h2>
+                  </div>
+                  <div class="contact-list">
+                    <h3><em>The Sunny Side LLC</em></h3>
+                    <div class="just-list">
+                      <p>sunnyprotectors.shop</p>
+                      <p>
+                        <i class="fa fa-map-marker-alt"></i>419 Bryson
+                        Springs<br />
+                        Costa Mesa, CA 92627<br />
+                        USA
+                      </p>
+                      <p><i class="fa fa-tty"></i>+1-877-573-0844</p>
+                      <p>
+                        <i class="fa fa-envelope"></i
+                        ><a
+                          href="mailto:support@sunnyprotectors.shop"
+                          style="color: white"
+                          >support@sunnyprotectors.shop</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row copyright">
+              <div class="sub">
+                <div class="col-lg-7 col-md-6">
+                  <ul>
+                    <li><a href="/privacy">Privacy Policy </a></li>
+                    <li><a href="/terms-conditions">Terms of Use </a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                  <p>2020 SunnyProtectors Shop All Rights Reserved</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <a href="javascript:void(0)" id="btn-back-to-top"
+          ><i class="fas fa-arrow-up"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script type="text/javascript" src="/theme/Public/js/mdb.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/conbox/assets/scripts/simplelightbox/simple-lightbox.min.js"
+    ></script>
+    <script type="text/javascript" src="/conbox/box/box.js"></script>
+  </body>
+</html>
