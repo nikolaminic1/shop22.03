@@ -30,6 +30,13 @@
       rel="icon"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://sunnyprotectors.shop/favicon.ico"
       type="image/x-icon"
       rel="shortcut icon"
@@ -100,6 +107,14 @@
       type="text/javascript"
       src="https://www.google.com/recaptcha/api.js"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script/main.js"></script>
   </head>
 
   <body id="home" class="home">
@@ -163,48 +178,23 @@
         </div>
       </nav>
 
-      <div class="header is-section is-box is-align-left">
-        <div class="bg is-overlay">
-          <div
-            class="is-overlay-bg"
-            style="
-              background-image: url('https://sunnyprotectors.shop/img/banner.jpg');
-            "
-          >
-            <div class="is-overlay-color" style="opacity: 0"></div>
-          </div>
-        </div>
+      <div class="landing-div">
+        <div
+          class="bg-imgage"
+          style="background-image: url('./img/bg-landing1.jpg')"
+        ></div>
 
-        <div class="container">
-          <div class="is-boxes">
-            <div class="is-box-centered">
-              <div class="is-container container-fluid is-content-left">
-                <div class="row">
-                  <div class="col-lg-5 col-md-7">
-                    <div class="display">
-                      <h2 class="title">
-                        <em class="title__tagline">We Offer</em>
-                        <strong>Great Deals!</strong>
-                      </h2>
-                    </div>
-
-                    <p class="display-text">
-                      Get affordable <strong>QUALITY PRODUCTS</strong> that
-                      might complement your day to day life.
-                    </p>
-
-                    <div>
-                      <a
-                        class="is-btn btn--secondary is-btn-small display-button"
-                        href="/products"
-                        >Start Shopping</a
-                      >
-                    </div>
-                  </div>
-
-                  <div class="col-lg-7 col-md-5"></div>
-                </div>
-              </div>
+        <div class="landing-text-container">
+          <div class="main-headling-landing">
+            <div class="container">
+              <h3><strong>We Offer</strong> <span>Great Deals! </span></h3>
+              <h4>
+                Get affordable QUALITY PRODUCTS that <br />
+                might complement your day to day life.
+              </h4>
+              <a href="/products">
+                <button class="btn-start-shopping">Start Shopping</button>
+              </a>
             </div>
           </div>
         </div>
@@ -213,7 +203,14 @@
       <div class="accessories" id="accessories">
         <div class="container">
           <div class="headline">
-            <h3>Shop now</h3>
+            <div class="row">
+              <div class="col-sm-6 col-12">
+                <h3><strong>Shop</strong> now</h3>
+              </div>
+              <div class="col-sm-6 col-12">
+                <button class="btn shop-btn">View Products</button>
+              </div>
+            </div>
             <div class="divider-headline"></div>
             <p>
               Get affordable quality products that might complement your day to
@@ -222,77 +219,74 @@
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-              <div class="individual-box">
-                <div class="vertical-box">
-                  <div class="vertical-text-holder">
-                    <h6>individual</h6>
+              <div class="main-product-box">
+                <div class="individual-box">
+                  <div class="vertical-box">
+                    <h6>fashion</h6>
                   </div>
+                  <img src="./img/slika-1.jpg" />
                 </div>
-                <img src="./img/slika-1.jpg" />
+                <div class="see-more-btn-holder">
+                  <a>
+                    <button class="see-more-btn">See more</button>
+                  </a>
+                </div>
               </div>
-              <div class="see-more-btn-holder">
-                <a>
-                  <button class="see-more-btn">See more</button>
-                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+              <div class="main-product-box">
+                <div class="individual-box">
+                  <div class="vertical-box">
+                    <h6>accessories</h6>
+                  </div>
+                  <img src="./img/slika-2.jpg" />
+                </div>
+                <div class="see-more-btn-holder">
+                  <a>
+                    <button class="see-more-btn">See more</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+              <div class="main-product-box">
+                <div class="individual-box">
+                  <div class="vertical-box">
+                    <h6>tech</h6>
+                  </div>
+                  <img src="./img/slika-3.jpg" />
+                </div>
+                <div class="see-more-btn-holder">
+                  <a>
+                    <button class="see-more-btn">See more</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        class="is-section is-box is-align-left is-light-text is-section-auto"
-        id="apparel"
-      >
+      <div id="apparel">
         <div class="container">
           <div class="is-boxes">
             <div class="is-box-centered">
               <div class="is-container container-fluid">
                 <div class="row">
-                  <div class="col-12">
+                  <div class="col-md-6 col-12 headline-txt">
                     <div class="headline">
-                      <h3 class="title">
-                        Apparel
-                        <a
-                          class="is-btn btn--ternary color-primary"
-                          href="/products/index?prod_name=&amp;category1=3"
-                          >View all</a
-                        >
-                      </h3>
+                      <h3 class="title">Apparel</h3>
                     </div>
+                  </div>
+                  <div class="col-md-6 col-12 view-all-btn-div">
+                    <a href="/products/index?prod_name=&amp;category1=3">
+                      <button class="btn btn-view-more">View all</button>
+                    </a>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col-lg-2 col-sm-4 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=3&amp;category2=181"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/apparel-bff.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">BFF</h4>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-2 col-sm-4 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=3&amp;category2=188"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/apparel-christmas.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">Christmas</h4>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-2 col-sm-4 col-6">
+                  <div class="col-lg-3 col-sm-3 col-6">
                     <div class="catitem">
                       <div class="catitem-photo">
                         <a
@@ -302,11 +296,13 @@
                         /></a>
                       </div>
 
-                      <h4 class="catitem-title">Couples</h4>
+                      <div class="item-text-holder">
+                        <h4 class="catitem-title">Couples</h4>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-2 col-sm-4 col-6">
+                  <div class="col-lg-3 col-sm-3 col-6">
                     <div class="catitem">
                       <div class="catitem-photo">
                         <a
@@ -316,11 +312,13 @@
                         /></a>
                       </div>
 
-                      <h4 class="catitem-title">Family</h4>
+                      <div class="item-text-holder">
+                        <h4 class="catitem-title">Family</h4>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-2 col-sm-4 col-6">
+                  <div class="col-lg-3 col-sm-3 col-6">
                     <div class="catitem">
                       <div class="catitem-photo">
                         <a
@@ -330,11 +328,13 @@
                         /></a>
                       </div>
 
-                      <h4 class="catitem-title">Pet</h4>
+                      <div class="item-text-holder">
+                        <h4 class="catitem-title">Pets</h4>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-2 col-sm-4 col-6">
+                  <div class="col-lg-3 col-sm-3 col-6">
                     <div class="catitem">
                       <div class="catitem-photo">
                         <a
@@ -344,125 +344,8 @@
                         /></a>
                       </div>
 
-                      <h4 class="catitem-title">Workout</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="is-section is-box is-align-left is-section-auto" id="men">
-        <div class="container">
-          <div class="is-boxes">
-            <div class="is-box-centered">
-              <div class="is-container container-fluid">
-                <div class="row">
-                  <div class="col-12">
-                    <h3 class="title color-primary">Men</h3>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="catwrap cat-light-primary row">
-                      <div
-                        class="catbox offset-xl-2 col-xl-8 offset-sm-1 col-sm-10"
-                      >
-                        <div class="headline">
-                          <h4 class="title">
-                            Grooming
-                            <a
-                              class="is-btn btn--primary btn--small"
-                              href="/products/index?prod_name=&amp;category1=11"
-                              >See more</a
-                            >
-                          </h4>
-                        </div>
-
-                        <div class="catbox-photo">
-                          <a href="/products/index?prod_name=&amp;category1=11"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/men-grooming.jpg"
-                          /></a>
-                        </div>
-                      </div>
-
-                      <div
-                        class="catitem offset-xl-2 col-xl-4 offset-sm-1 col-sm-5 col-6"
-                      >
-                        <div class="catitem-photo">
-                          <a href="/products/index?prod_name=&amp;category1=11"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/men-beard-balm.png"
-                          /></a>
-                        </div>
-
-                        <h4 class="catitem-title">Beard Balm</h4>
-                      </div>
-
-                      <div class="catitem col-xl-4 col-sm-5 col-6">
-                        <div class="catitem-photo">
-                          <a href="/products/index?prod_name=&amp;category1=11"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/men-beard-oil.png"
-                          /></a>
-                        </div>
-
-                        <h4 class="catitem-title">Beard Oil</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="catwrap cat-primary row">
-                      <div
-                        class="catbox offset-xl-2 col-xl-8 offset-sm-1 col-sm-10"
-                      >
-                        <div class="headline">
-                          <h4 class="title">
-                            Underwear<a
-                              class="is-btn btn--ternary color-primary btn--small"
-                              href="/products/index?prod_name=&amp;category1=12"
-                              >See more</a
-                            >
-                          </h4>
-                        </div>
-
-                        <div class="catbox-photo">
-                          <a href="/products/index?prod_name=&amp;category1=12"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/men-underwear.jpg"
-                          /></a>
-                        </div>
-                      </div>
-
-                      <div
-                        class="catitem offset-xl-2 col-xl-4 offset-sm-1 col-sm-5 col-6"
-                      >
-                        <div class="catitem-photo">
-                          <a
-                            href="/products/index?prod_name=&amp;category1=12&amp;category2=575"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/men-boxer-briefs.png"
-                          /></a>
-                        </div>
-
-                        <h4 class="catitem-title">Boxer Briefs</h4>
-                      </div>
-
-                      <div class="catitem col-xl-4 col-sm-5 col-6">
-                        <div class="catitem-photo">
-                          <a
-                            href="/products/index?prod_name=&amp;category1=12&amp;category2=576"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/men-briefs.png"
-                          /></a>
-                        </div>
-
-                        <h4 class="catitem-title">Briefs</h4>
+                      <div class="item-text-holder">
+                        <h4 class="catitem-title">Fitness</h4>
                       </div>
                     </div>
                   </div>
@@ -473,126 +356,53 @@
         </div>
       </div>
 
-      <div class="is-section is-box is-align-left is-section-auto" id="women">
+      <div id="men">
         <div class="container">
-          <hr />
           <div class="is-boxes">
-            <div class="is-box-centered">
-              <div class="is-container container-fluid">
-                <div class="row">
-                  <div class="col-12">
-                    <h3 class="title color-secondary">Women</h3>
+            <div>
+              <div class="container-fluid">
+                <div class="headline-div">
+                  <div class="row header-row">
+                    <div class="col-6 man-div-head">
+                      <h3>Men</h3>
+                    </div>
+                    <div class="col-6 col-button">
+                      <a>
+                        <button class="men-button-view-more">View More</button>
+                      </a>
+                    </div>
                   </div>
+                  <div class="divider-headline"></div>
+                  <p>
+                    Get affordable QUALITY PRODUCTS that might complement your
+                    day to day life.
+                  </p>
                 </div>
 
-                <div class="row row--gutter">
-                  <div class="col-lg-4">
-                    <div class="row">
-                      <div class="catbox col-12">
-                        <div class="headline">
-                          <h4 class="title">
-                            Activewear
-                            <a
-                              class="is-btn btn--secondary btn--small"
-                              href="/products/index?prod_name=&amp;category1=15"
-                              >See more</a
-                            >
-                          </h4>
+                <div class="first-man-div">
+                  <div class="row main-div-images">
+                    <div class="col-md-6 col-12 col-custom">
+                      <div class="left-image-holder">
+                        <div class="left-image-text-holder">
+                          <a href="/products">
+                            <span>View more</span>
+                          </a>
                         </div>
-
-                        <div class="catbox-photo">
-                          <a href="/products/index?prod_name=&amp;category1=15"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/women-activewear.jpg"
-                          /></a>
-                        </div>
-                      </div>
-
-                      <div class="catitem col-6">
-                        <div class="catitem-photo">
-                          <a
-                            href="/products/index?prod_name=&amp;category1=15&amp;category2=598"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/women-capris.png"
-                          /></a>
-                        </div>
-
-                        <h4 class="catitem-title">Capris</h4>
-                      </div>
-
-                      <div class="catitem col-6">
-                        <div class="catitem-photo">
-                          <a
-                            href="/products/index?prod_name=&amp;category1=15&amp;category2=597"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/women-bra.png"
-                          /></a>
-                        </div>
-
-                        <h4 class="catitem-title">Bra</h4>
+                        <img class="left-image" src="./img/man-1.jpg" />
                       </div>
                     </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="row">
-                      <div class="catbox col-12">
-                        <div class="headline">
-                          <h4 class="title">
-                            Fashion
-                            <a
-                              class="is-btn btn--secondary btn--small"
-                              href="/products/index?prod_name=&amp;category1=16"
-                              >See more</a
-                            >
-                          </h4>
-                        </div>
-
-                        <div class="catbox-photo">
-                          <a href="/products/index?prod_name=&amp;category1=16"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/women-fashion.jpg"
-                          /></a>
+                    <div class="col-md-6 col-12 col-custom">
+                      <div class="right-image-holder right-image-holder-top">
+                        <img src="./img/man-2.jpg" />
+                        <div class="text-holder-image">
+                          <a> <span>View more</span> </a>
                         </div>
                       </div>
-
-                      <div class="catitem col-6">
-                        <div class="catitem-photo">
-                          <a
-                            href="/products/index?prod_name=&amp;category1=16&amp;category2=617"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/women-tops.png"
-                          /></a>
+                      <div class="right-image-holder right-image-holder-bottom">
+                        <img src="./img/man-3.jpg" />
+                        <div class="text-holder-image">
+                          <a> <span>View more</span> </a>
                         </div>
-
-                        <h4 class="catitem-title">Tops</h4>
-                      </div>
-
-                      <div class="catitem col-6">
-                        <div class="catitem-photo">
-                          <a
-                            href="/products/index?prod_name=&amp;category1=16&amp;category2=616"
-                            ><img
-                              src="https://sunnyprotectors.shop/img/women-romper.png"
-                          /></a>
-                        </div>
-
-                        <h4 class="catitem-title">Romper</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="offset-lg-1 col-lg-3">
-                    <div class="catbox">
-                      <h4 class="catbox-title color-secondary">
-                        Costumes &amp; Lingerie
-                      </h4>
-
-                      <div class="catbox-photo">
-                        <a href="/products/index?prod_name=&amp;category1=7"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/women-costumes-and-lingerie.jpg"
-                        /></a>
                       </div>
                     </div>
                   </div>
@@ -603,31 +413,26 @@
         </div>
       </div>
 
-      <div
-        class="is-section is-box is-align-left is-light-text is-section-auto"
-        id="infant"
-      >
+      <div id="infant">
         <div class="container">
           <div class="is-boxes">
             <div class="is-box-centered">
               <div class="is-container container-fluid">
                 <div class="row">
-                  <div class="col-12">
+                  <div class="col-md-6 col-12">
                     <div class="headline">
-                      <h3 class="title">
-                        Infant Wear
-                        <a
-                          class="is-btn btn--ternary color-secondary"
-                          href="/products/index?prod_name=&amp;category1=8"
-                          >View all</a
-                        >
-                      </h3>
+                      <h3 class="title">Infant Wear</h3>
                     </div>
+                  </div>
+                  <div class="col-md-6 col-12 col-right">
+                    <a href="/products/index?prod_name=&amp;category1=8">
+                      <button class="infant-btn-view">View all</button>
+                    </a>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col-lg-2 col-sm-4 col-6">
+                  <div class="col-lg-3 col-sm-6 col-6">
                     <div class="catitem">
                       <div class="catitem-photo">
                         <a
@@ -636,12 +441,13 @@
                             src="https://sunnyprotectors.shop/img/infant-bath-accessories.png"
                         /></a>
                       </div>
-
-                      <h4 class="catitem-title">Bath Accessories</h4>
+                      <div class="item-text-holder">
+                        <h4 class="catitem-title">Bath Accessories</h4>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-2 col-sm-4 col-6">
+                  <div class="col-lg-3 col-sm-6 col-6">
                     <div class="catitem">
                       <div class="catitem-photo">
                         <a
@@ -651,39 +457,13 @@
                         /></a>
                       </div>
 
-                      <h4 class="catitem-title">Blankets</h4>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-2 col-sm-4 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=8&amp;category2=434"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/infant-bodysuits.png"
-                        /></a>
+                      <div class="item-text-holder">
+                        <h4 class="catitem-title">Blankets</h4>
                       </div>
-
-                      <h4 class="catitem-title">Bodysuits</h4>
                     </div>
                   </div>
 
-                  <div class="col-lg-2 col-sm-4 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/index?prod_name=&amp;category1=8&amp;category2=437"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/infant-hats.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">Hats</h4>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-2 col-sm-4 col-6">
+                  <div class="col-lg-3 col-sm-6 col-6">
                     <div class="catitem">
                       <div class="catitem-photo">
                         <a
@@ -693,11 +473,13 @@
                         /></a>
                       </div>
 
-                      <h4 class="catitem-title">Shirts</h4>
+                      <div class="item-text-holder">
+                        <h4 class="catitem-title">Shirts</h4>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-2 col-sm-4 col-6">
+                  <div class="col-lg-3 col-sm-6 col-6">
                     <div class="catitem">
                       <div class="catitem-photo">
                         <a
@@ -706,8 +488,9 @@
                             src="https://sunnyprotectors.shop/img/infant-sleep-and-play.png"
                         /></a>
                       </div>
-
-                      <h4 class="catitem-title">Sleep &amp; Play</h4>
+                      <div class="item-text-holder">
+                        <h4 class="catitem-title">Sleep &amp; Play</h4>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -717,150 +500,237 @@
         </div>
       </div>
 
-      <div
-        class="is-section is-box is-align-left is-section-auto"
-        id="cosmetics"
-      >
-        <div class="bg is-overlay">
-          <div
-            class="is-overlay-bg"
-            style="
-              background-image: url('https://sunnyprotectors.shop/img/background-cosmetics--large.jpg');
-            "
-          >
-            <div class="is-overlay-color" style="opacity: 0"></div>
-          </div>
-        </div>
-
+      <div id="women">
         <div class="container">
-          <div class="is-boxes">
-            <div class="is-box-centered">
-              <div class="is-container container-fluid">
-                <div class="row">
-                  <div class="col-12">
-                    <h3 class="title color-secondary">Cosmetics</h3>
+          <div class="text-holder-woman">
+            <div class="row headline-main-woman">
+              <div class="col-md-6 col-12 head-line-holder">
+                <h3 class="left-align">Women</h3>
+              </div>
+              <div class="col-md-6 col-12 btn-holder">
+                <a href="/products">
+                  <button class="woman-btn-view-more">VIEW ALL</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="divider-woman"></div>
+            <p>
+              Get affordable QUALITY PRODUCTS that might complement your day to
+              day life.
+            </p>
+          </div>
+
+          <div class="container container-a">
+            <div class="row row-for-list">
+              <div class="col-lg-2 col-md-6 col-12 col-woman-padding-free">
+                <div class="main-container-woman">
+                  <div class="for-overlay"></div>
+                  <div class="icon-for-href">
+                    <a href="/products">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-arrow-bar-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="img-holder">
+                    <img src="./img/woman-6.jpg" />
+                  </div>
+                  <div class="text-holder">
+                    <span class="for-hover">Underwear</span>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-lg-3">
-                    <div class="catbox">
-                      <div class="catbox-photo">
-                        <img
-                          src="https://sunnyprotectors.shop/img/cosmetics-beauty-and-fragrance.jpg"
-                        />
-                      </div>
-
-                      <h4 class="catbox-title">Beauty &amp; Fragrance</h4>
-                      <a
-                        class="is-btn btn--secondary btn--outline"
-                        href="/products/index?prod_name=&amp;category1=5"
-                        >See more</a
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-woman-padding-free">
+                <div class="main-container-woman">
+                  <div class="for-overlay"></div>
+                  <div class="icon-for-href">
+                    <a href="/products">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-arrow-bar-right"
+                        viewBox="0 0 16 16"
                       >
-                    </div>
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                        />
+                      </svg>
+                    </a>
                   </div>
-
-                  <div class="offset-lg-1 col-lg-2 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=5&amp;category2=285"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/cosmetics-mens-fragrance.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">Men's Fragrance</h4>
-                    </div>
+                  <div class="img-holder">
+                    <img src="./img/woman-3.jpg" />
                   </div>
-
-                  <div class="col-lg-2 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=5&amp;category2=286"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/cosmetics-womens-fragrance.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">Women's Fragrance</h4>
-                    </div>
+                  <div class="text-holder">
+                    <span class="for-hover">Fashion</span>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-lg-3">
-                    <div class="catbox">
-                      <div class="catbox-photo">
-                        <img
-                          src="https://sunnyprotectors.shop/img/cosmetics-bath-and-body.jpg"
-                        />
-                      </div>
-
-                      <h4 class="catbox-title">Bath &amp; Body</h4>
-                      <a
-                        class="is-btn btn--secondary btn--outline"
-                        href="/products/index?prod_name=&amp;category1=4"
-                        >See more</a
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-woman-padding-free">
+                <div class="main-container-woman">
+                  <div class="for-overlay"></div>
+                  <div class="icon-for-href">
+                    <a href="/products">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-arrow-bar-right"
+                        viewBox="0 0 16 16"
                       >
-                    </div>
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                        />
+                      </svg>
+                    </a>
                   </div>
-
-                  <div class="offset-lg-1 col-lg-2 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=4&amp;category2=277"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/cosmetics-bar-sope.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">Bar Soap</h4>
-                    </div>
+                  <div class="img-holder">
+                    <img src="./img/woman-7.jpg" />
                   </div>
-
-                  <div class="col-lg-2 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=4&amp;category2=279"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/cosmetics-bath-salts.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">Bath Salts</h4>
-                    </div>
+                  <div class="text-holder third">
+                    <span class="for-hover2">Cosmetics</span>
                   </div>
-
-                  <div class="col-lg-2 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=4&amp;category2=282"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/cosmetics-body-lotion.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">Body Lotion</h4>
-                    </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-woman-padding-free">
+                <div class="main-container-woman">
+                  <div class="for-overlay"></div>
+                  <div class="icon-for-href">
+                    <a href="/products">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-arrow-bar-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                        />
+                      </svg>
+                    </a>
                   </div>
+                  <div class="img-holder">
+                    <img src="./img/woman-4.jpg" />
+                  </div>
+                  <div class="text-holder">
+                    <span class="for-hover">Accessories</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                  <div class="col-lg-2 col-6">
-                    <div class="catitem">
-                      <div class="catitem-photo">
-                        <a
-                          href="/products/index?prod_name=&amp;category1=4&amp;category2=283"
-                          ><img
-                            src="https://sunnyprotectors.shop/img/lip-balm.png"
-                        /></a>
-                      </div>
-
-                      <h4 class="catitem-title">Lip Balm</h4>
-                    </div>
+            <div class="row row-for-list">
+              <div class="col-lg-3 col-md-6 col-12 col-woman-padding-free">
+                <div class="main-container-woman">
+                  <div class="for-overlay"></div>
+                  <div class="icon-for-href">
+                    <a href="/products">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-arrow-bar-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="img-holder">
+                    <img src="./img/woman-1.jpg" />
+                  </div>
+                  <div class="text-holder second">
+                    <span class="for-hover2">Shoes</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-12 col-woman-padding-free">
+                <div class="main-container-woman">
+                  <div class="for-overlay"></div>
+                  <div class="icon-for-href">
+                    <a href="/products">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-arrow-bar-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="img-holder">
+                    <img src="./img/woman-2.jpg" />
+                  </div>
+                  <div class="text-holder">
+                    <span class="for-hover">Make-up</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-woman-padding-free">
+                <div class="main-container-woman">
+                  <div class="for-overlay"></div>
+                  <div class="icon-for-href">
+                    <a href="/products">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-arrow-bar-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="img-holder">
+                    <img src="./img/woman-5.jpg" />
+                  </div>
+                  <div class="text-holder">
+                    <span class="for-hover">Accessories</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-woman-padding-free">
+                <div class="main-container-woman">
+                  <div class="for-overlay"></div>
+                  <div class="icon-for-href">
+                    <a href="/products">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-arrow-bar-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="img-holder">
+                    <img src="./img/woman-8.jpg" />
+                  </div>
+                  <div class="text-holder second">
+                    <span class="for-hover2">Watches</span>
                   </div>
                 </div>
               </div>
@@ -870,7 +740,7 @@
       </div>
 
       <div class="is-section">
-        <footer class="">
+        <footer>
           <div class="container">
             <div class="row">
               <div class="col-lg-8 col-md-7">
@@ -920,7 +790,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-5 col-sm-12 col-12">
+              <div
+                class="col-lg-4 col-md-5 col-sm-12 col-12 footer-contact-form"
+              >
                 <div
                   class="contact-right-txt"
                   data-aos="fade-up"
